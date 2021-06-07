@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.hero-container {
+  width: 100%;
+  background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+  position: relative;
+  height: 100vh;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  right: 40px;
+}
+.col1 img,
+::selection {
+  background: none;
+}
+.massage {
+  resize: none;
+}
+.my-row {
+  display: flex;
+  width: 80%;
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.col1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #861657;
+ background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  overflow: hidden;
+}
+.col1 h1 {
+  text-align: left;
+}
+.col1,
+.col2 {
+  width: 50%;
+}
+.col2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.text {
+  text-align: center;
+}
+.text h1 {
+  margin: 10px;
+}
+
+.my-form {
+  width: 50%;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.box {
+  margin: 10px;
+  width: 100%;
+}
+.box input,
+.massage {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  background-color: #ffe4e1;
+  border: none;
+  color: #dc00d1;
+}
+
+.submit {
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  border: none;
+  top: 5%;
+  background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+.my-form h4 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media only screen and (max-width: 800px) {
+  .my-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .col1,
+  .col2 {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: none;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+  }
+  .img {
+    width: 60%;
+    position: relative;
+    right: 0;
+  }
+}
